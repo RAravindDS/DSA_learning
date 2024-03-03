@@ -5,16 +5,19 @@ using namespace std;
 
 
 
-int add(int a, int b ) {
-    int answer = a + b; 
-    return answer; 
+void printfirstpatterm (int n) { 
+
+    for (int i=0; i<n; i++){
+        for (int j=0; j<n;  j++){
+            cout << "*"; 
+        }
+        cout << "\n"; 
+    }
 }
 
 
 int main() { 
-    int a, b; 
-    cin >> a >> b; 
-    int c =  add(a, b); 
-    cout << c; 
-    return 0; 
+    int bro; 
+    cin >> bro; 
+    printfirstpatterm(bro); 
 }
